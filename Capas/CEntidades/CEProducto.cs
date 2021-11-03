@@ -13,7 +13,7 @@ namespace CEntidades
         private int cantidad;
         private int precio;
         private String categoria;
-        private byte activo;
+        private Byte activo;
 
         public int Id_producto { get => id_producto; set => id_producto = value; }
         public string Nombre { get => nombre; set => nombre = value; }
