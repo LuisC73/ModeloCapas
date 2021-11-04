@@ -64,6 +64,11 @@ namespace CDatos
             }
         }
 
+        public DataSet consultar_cita(object oECitas)
+        {
+            throw new NotImplementedException();
+        }
+
         public DataSet Consultar_producto(CEProducto oproducto)
         {
             try

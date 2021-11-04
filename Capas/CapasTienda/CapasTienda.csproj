@@ -67,9 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FormularioProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioProductos.aspx.cs">
+      <DependentUpon>FormularioProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioProductos.aspx.designer.cs">
+      <DependentUpon>FormularioProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProductosBase.cs" />
+    <Compile Include="FormularioProductosBase1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +90,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CDatos\CDatos.csproj">
+      <Project>{F651F6E8-AC28-4348-9D3B-CA8BA2A2419C}</Project>
+      <Name>CDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CEntidades\CEntidades.csproj">
+      <Project>{4AFE4BD3-9B84-4780-A031-1C89AE2FBE0E}</Project>
+      <Name>CEntidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

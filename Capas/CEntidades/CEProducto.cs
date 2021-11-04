@@ -8,6 +8,7 @@ namespace CEntidades
 {
     public class CEProducto
     {
+        public string codigo_producto;
         private int id_producto;
         private String nombre;
         private int cantidad;
